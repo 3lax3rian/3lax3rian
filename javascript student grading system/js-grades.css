@@ -1,0 +1,46 @@
+/* (A) WHOLE PAGE */
+* {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* (B) SHARED */
+.row { display: flex; }
+.grade {
+  padding: 10px;
+  color: #fff;
+  background: #072d85;
+}
+#gradeForm, #gradeCalc {
+  max-width: 400px;
+  padding: 15px;
+  border: 1px solid #eee;
+  background: #f2f2f2;
+}
+
+/* (C) GRADES FORM */
+#gradeForm label, #gradeForm input {
+  display: block;
+  width: 100%;
+}
+#gradeForm label { margin: 10px 0; }
+#gradeForm input { padding: 10px; }
+#gradeForm input[type=submit] {
+  margin-top: 20px;
+  color: #fff;
+  border: 0;
+  background: #a93131;
+}
+#gradeForm input[type=number] { flex-grow: 1; }
+
+/* (D) TOTAL & AVERAGE */
+#gradeCalc {
+  margin-top: 20px;
+  font-weight: 700;
+}
+#gradeCalc .grade { width: 120px; }
+#gradeCalc .row {
+  border: 1px solid #f1f1f1;
+  background: #fff;
+}
+#gradeT, #gradeA { padding: 10px; }
